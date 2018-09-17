@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <zeng.fanda.com.pratice5.Practice5OnDrawLayoutView
+     android:layout_width="160dp"
+     android:layout_height="210dp"
+     android:orientation="vertical">
+
+ </zeng.fanda.com.pratice5.Practice5OnDrawLayoutView>
+</FrameLayout>
