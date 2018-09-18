@@ -60,5 +60,6 @@ public class MainActivity extends SupportActivity {
         mTypeBeanList.add(new TypeBean("绘制的顺序", Constant.VIEW_Pratice5Activity));
         mTypeBeanList.add(new TypeBean("属性动画(上手)", Constant.VIEW_Pratice6Activity));
         mTypeBeanList.add(new TypeBean("属性动画(进阶)", Constant.VIEW_Pratice7Activity));
+        mTypeBeanList.add(new TypeBean("布局", Constant.VIEW_Pratice8Activity));
     }
 }

@@ -25,6 +25,7 @@
         <activity android:name=".ui.Pratice5Activity"/>
         <activity android:name=".ui.Pratice6Activity"/>
         <activity android:name=".ui.Pratice7Activity"/>
+        <activity android:name=".ui.Pratice8Activity"/>
     </application>
 
 </manifest>

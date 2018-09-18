@@ -47,4 +47,5 @@ dependencies {
     implementation project(':pratice5')
     implementation project(':pratice6')
     implementation project(':pratice7')
+    implementation project(':pratice8')
 }
