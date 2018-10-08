@@ -6,6 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -45,6 +46,9 @@ public class Practice3GetTextBoundsView extends View {
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeWidth(3);
 
+        Log.d("bounds","left" + mRect.left + "==" + "top" + mRect.top + "==" + "right" + mRect.right + "==" + "bottom" + mRect.bottom);
+        // 6，-77，-511，1
+        //206,123,-711,201
         mRect.left += 200;
         mRect.right += 200;
         mRect.top += 200;

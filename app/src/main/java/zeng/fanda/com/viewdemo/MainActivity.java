@@ -21,6 +21,7 @@ import zeng.fanda.com.viewdemo.adapter.PraticeTypeAdapter;
 import zeng.fanda.com.viewdemo.base.Constant;
 import zeng.fanda.com.viewdemo.di.DaggerMainCompoment;
 import zeng.fanda.com.viewdemo.model.TypeBean;
+import zeng.fanda.com.viewdemo.utils.EntranceUtils;
 
 public class MainActivity extends SupportActivity {
 
@@ -39,6 +40,7 @@ public class MainActivity extends SupportActivity {
         ButterKnife.bind(this);
         DaggerMainCompoment.builder().build().inject(this);
         initListData();
+
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this,LinearLayoutManager.VERTICAL));
         mRecyclerView.setAdapter(mPraticeTypeAdapter);

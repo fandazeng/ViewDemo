@@ -32,12 +32,23 @@ public class Pratice1DrawPointView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+
+        //设置点的大小
         mPaint.setStrokeWidth(150);
 
+        //设置点的形状
         mPaint.setStrokeCap(Paint.Cap.SQUARE);
         canvas.drawPoint(1000, 400, mPaint);
 
+        //设置端点的形状
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         canvas.drawPoint(500, 400, mPaint);
+
+//        float[] points = {0, 0, 50, 50, 50, 100, 100, 50, 100, 100, 150, 50, 150, 100};
+//        canvas.drawPoints(points,mPaint);
+        //offset ，跳过点的数量，下述是跳过0,0两个点
+//         count是要绘制的点的数量（50, 50, 50, 100, 100, 50, 100, 100）
+//        canvas.drawPoints(points, 2, 8, mPaint);
+
     }
 }

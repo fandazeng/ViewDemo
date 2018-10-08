@@ -34,5 +34,11 @@ public class Pratice1DrawLineView extends View {
         super.onDraw(canvas);
         mPaint.setStrokeWidth(15);
         canvas.drawLine(500, 400, 1000, 800, mPaint);
+
+//        float[] points = {20, 20, 120, 20, 70, 20, 70, 120, 20, 120, 120, 120, 150, 20, 250, 20, 150, 20, 150, 120, 250, 20, 250, 120, 150, 120, 250, 120};
+//        canvas.drawLines(points, mPaint);
+//        跟画多点类似
+//        canvas.drawLines(points,2,8,mPaint);
+
     }
 }

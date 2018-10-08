@@ -31,12 +31,18 @@ public class Pratice1DrawPathView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    {
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        //        mPaint.setStyle(Paint.Style.FILL);
+        mPaint.setStyle(Paint.Style.FILL);
         mPath.addArc(500, 200, 700, 400, -225, 225);
-        //这里不能是true，如果是true，起点会变成第二个圆弧的起点，false才保持第一个圆弧的起点，注意这个参数
+//        //这里不能是true，如果是true，起点会变成第二个圆弧的起点，false才保持第一个圆弧的起点，注意这个参数
         mPath.arcTo(700, 200, 900, 400, -180, 225, false);
         mPath.lineTo(700, 542);
 

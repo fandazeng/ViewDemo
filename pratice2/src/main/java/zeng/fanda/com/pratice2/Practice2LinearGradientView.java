@@ -41,8 +41,8 @@ public class Practice2LinearGradientView extends View {
 
         canvas.drawCircle(300, 300, 200, mPaint);
 
-        canvas.drawLine(0, 0, 100, 100, mPaint);
-        canvas.drawLine(0, 0, 500, 500, mPaint);
+//        canvas.drawLine(0, 0, 100, 100, mPaint);
+//        canvas.drawLine(0, 0, 500, 500, mPaint);
 
     }
 }

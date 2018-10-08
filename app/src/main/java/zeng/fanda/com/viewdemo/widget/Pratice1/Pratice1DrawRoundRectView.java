@@ -3,6 +3,7 @@ package zeng.fanda.com.viewdemo.widget.Pratice1;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -16,6 +17,8 @@ import android.view.View;
 public class Pratice1DrawRoundRectView extends View {
 
     private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+    private RectF mRectF = new RectF();
 
     public Pratice1DrawRoundRectView(Context context) {
         super(context);
@@ -32,6 +35,11 @@ public class Pratice1DrawRoundRectView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawRoundRect(400, 200, 1000, 600, 50, 50, mPaint);
+
+        mRectF.set(400, 200, 1000, 600);
+        canvas.drawRoundRect(mRectF, 50, 50, mPaint);
+
+        //这个方法需要API21
+//        canvas.drawRoundRect(400, 200, 1000, 600, 50, 50, mPaint);
     }
 }

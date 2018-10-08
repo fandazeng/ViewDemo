@@ -45,9 +45,6 @@ import zeng.fanda.com.viewdemo.R;
  */
 public class Pratice1DrawColorView extends View {
 
-    private Paint mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-    private Path mPath = new Path();
-
     public Pratice1DrawColorView(Context context) {
         super(context);
     }
@@ -64,7 +61,9 @@ public class Pratice1DrawColorView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        canvas.drawColor(Color.parseColor("#FFFF00"));
+//        canvas.drawColor(Color.parseColor("#FFFF00"));
+//        canvas.drawRGB(255,255,0);
+        canvas.drawARGB(255,255,255,0);
 
     }
 

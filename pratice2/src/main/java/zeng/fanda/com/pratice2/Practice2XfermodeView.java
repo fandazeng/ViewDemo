@@ -37,12 +37,17 @@ public class Practice2XfermodeView extends View {
         super(context, attrs, defStyleAttr);
     }
 
+    {
+        setLayerType(LAYER_TYPE_SOFTWARE,mPaint);
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        //开启软件加速,离屏缓冲，用这个方法也能实现，但是不流畅，界面卡
+        //开启软件加速,离屏缓冲，用这个方法也能实现
 //        setLayerType(LAYER_TYPE_SOFTWARE,mPaint);
+        //这种方法性能更高
         int saved = canvas.saveLayer(null, null, Canvas.ALL_SAVE_FLAG);
 
         Bitmap batman = BitmapFactory.decodeResource(getResources(), R.drawable.batman);
@@ -55,7 +60,7 @@ public class Practice2XfermodeView extends View {
         canvas.drawBitmap(logo, 0, 0, mPaint);
         mPaint.setXfermode(null);
 
-        canvas.restoreToCount(saved);
+//        canvas.restoreToCount(saved);
 
     }
 }
