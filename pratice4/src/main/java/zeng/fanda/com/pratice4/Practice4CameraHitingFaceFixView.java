@@ -58,6 +58,7 @@ public class Practice4CameraHitingFaceFixView extends View {
         mObjectAnimator.setRepeatCount(ValueAnimator.INFINITE);
 
         DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        //往外为负
         float newZ = - displayMetrics.density * 6;
         mCamera.setLocation(0, 0, newZ);
     }

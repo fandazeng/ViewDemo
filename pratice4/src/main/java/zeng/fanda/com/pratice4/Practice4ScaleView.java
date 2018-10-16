@@ -40,19 +40,19 @@ public class Practice4ScaleView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-//        canvas.drawBitmap(mBitmap, 400, 300, mPaint);
-//
-//        //保存状态
-//        canvas.save();
-//
-//        //代码顺序要跟绘制顺序相反，实际效果是先平移后缩放的
-////        canvas.scale(1.3f,1.3f,900 + mBitmap.getWidth() / 2, 300 + mBitmap.getHeight() / 2);
-//        canvas.scale(1.3f,1.3f,900 , 300);
-//        canvas.translate(500, 0);
-//        canvas.drawBitmap(mBitmap, 400, 300, mPaint);
-//
-//        //恢复绘制范围
-//        canvas.restore();
+        canvas.drawBitmap(mBitmap, 400, 300, mPaint);
+
+        //保存状态
+        canvas.save();
+
+        //代码顺序要跟绘制顺序相反，实际效果是先平移后缩放的
+//        canvas.scale(1.3f,1.3f,900 + mBitmap.getWidth() / 2, 300 + mBitmap.getHeight() / 2);
+        canvas.scale(1.3f,1.3f,900 , 300);
+        canvas.translate(500, 0);
+        canvas.drawBitmap(mBitmap, 400, 300, mPaint);
+
+        //恢复绘制范围
+        canvas.restore();
 
     }
 }

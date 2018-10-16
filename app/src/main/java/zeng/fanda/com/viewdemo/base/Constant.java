@@ -13,4 +13,5 @@ public interface Constant {
     String VIEW_Pratice6Activity = "/view/Pratice6Activity";
     String VIEW_Pratice7Activity = "/view/Pratice7Activity";
     String VIEW_Pratice8Activity = "/view/Pratice8Activity";
+    String VIEW_Pratice9Activity = "/view/Pratice9Activity";
 }

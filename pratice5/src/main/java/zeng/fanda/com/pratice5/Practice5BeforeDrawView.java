@@ -32,10 +32,10 @@ public class Practice5BeforeDrawView extends AppCompatEditText {
     }
 
     @Override
-    public void draw(Canvas canvas) {      //总调试方法，在所有流程执行完后执行
+    public void draw(Canvas canvas) {      //总调度方法
 
         //代码写在前面
-        canvas.drawColor(Color.BLUE);
+        canvas.drawColor(Color.parseColor("#66BB6A"));
 
         super.draw(canvas);
 

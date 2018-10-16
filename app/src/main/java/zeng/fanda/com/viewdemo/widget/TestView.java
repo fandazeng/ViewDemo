@@ -177,7 +177,7 @@ public class TestView extends View {
 
         // ================================================================ 画Bitmap
 
-//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+//        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.lion);
 //        canvas.drawBitmap(bitmap, 200, 100, mPaint);
 
         // ================================================================画文本

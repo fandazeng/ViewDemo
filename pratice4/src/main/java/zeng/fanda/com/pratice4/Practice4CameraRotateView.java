@@ -45,12 +45,13 @@ public class Practice4CameraRotateView extends View {
 
         //保存状态
         canvas.save();
+
         mCamera.save();
         mCamera.rotate(30,0,0);
         mCamera.applyToCanvas(canvas);
         mCamera.restore();
-        canvas.drawBitmap(mBitmap,300,100,mPaint);
 
+        canvas.drawBitmap(mBitmap,300,100,mPaint);
         //恢复绘制范围
         canvas.restore();
 
